@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fiscaluno Login</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/vue"></script>
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                appId            : '1700502456660033',
+                autoLogAppEvents : true,
+                xfbml            : true,
+                version          : 'v2.10'
+                });
+                FB.AppEvents.logPageView();
+            };
+        
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+    </head>
+    <body>
+        <div id="app" class="site-wrapper"><!-- site-wrapper -->
+            <div class="site-wrapper-inner"><!-- site-wrapper-inner -->
+                <div class="container"><!-- container -->
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-5">
+                            <div class="inner cover">
+                                <h5 class="text-center mb-5">Fiscaluno Login</h5>
+                
+                                <button type="button" class="btn btn-primary btn-block" @click="openFbLoginDialog">Facebook Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- container -->
+            </div><!-- site-wrapper-inner -->
+            </div><!-- site-wrapper -->
+        <script src="./js/script.js"></script>
+    </body>
+</html>
