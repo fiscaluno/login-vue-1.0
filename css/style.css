@@ -52,3 +52,15 @@ body {
         width: 42rem;
      }
 }
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 1s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active em versões anteriores a 2.1.8 */ {
+    opacity: 0;
+}
+
+#transition {
+    padding: 2.5rem;
+}

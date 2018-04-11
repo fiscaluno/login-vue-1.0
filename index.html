@@ -41,6 +41,11 @@
                 
                                 <button type="button" class="btn btn-primary btn-block" @click="openFbLoginDialog">Facebook Login</button>
                             </div>
+                            <div id="transition" class="text-center">
+                                <transition name="fade">
+                                    <h1 v-if="show">Bem vindo, {{ name }}!</h1>
+                                </transition>
+                            </div>
                         </div>
                     </div>
                 </div><!-- container -->
