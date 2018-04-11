@@ -9,8 +9,6 @@ var app = new Vue({
                 FB.api('/me', { fields: 'name,email' }, function(profile) {
                     console.log('Bem vindo ao Fiscaluno, ' + profile.name + '.');
                     console.log(response);
-                    return (profile.name);
-                    this.data;
                 });
             } else if (response.status === 'not_authorized') {
                 console.log('ERRO: não autorizado.');
