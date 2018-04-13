@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,7 +18,7 @@
                 });
                 FB.AppEvents.logPageView();
             };
-        
+
             (function(d, s, id){
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id)) {return;}
@@ -35,12 +36,13 @@
                         <div class="col-md-5">
                             <div class="inner cover">
                                 <h5 class="text-center mb-5">Fiscaluno Login</h5>
-                
+
                                 <button type="button" class="btn btn-primary btn-block" @click="openFbLoginDialog">Facebook Login</button>
                             </div>
                             <div id="transition" class="text-center">
                                 <transition name="fade">
                                     <h1 v-if="show">Bem vindo!</h1>
+                                    <connected></connected>
                                 </transition>
                             </div>
                         </div>
